@@ -1,0 +1,243 @@
+/* curved sides */
+html {
+    background-color: rgb(186, 201, 139);
+}
+
+body{
+    background-color: white;
+    box-shadow: 2px 4px 5px;
+    padding: 1rem 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 30px;
+    margin: 14px 14px;
+}
+
+/* styling NAME & POST */
+#boss_name {
+    color: rgb(5, 73, 119);
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#boss_post {
+    color: rgb(1, 64, 136);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* styling INTERNAL LINKS (intro, experience.... ) */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation_bar {
+    background-color: beige;
+    justify-content: space-between;  
+}
+
+.links {
+    display: flex;
+    gap: 1rem 3rem;
+    margin: 0 auto;
+    min-height: 75px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.links a{
+    font-size: 21px;
+}
+
+.links a:visited {
+    color: rgb(67, 85, 1);
+}
+
+.links a:hover {
+    color: rgb(219, 8, 43);
+}
+
+
+/* image at center */
+.images {
+    text-align: center;
+}
+
+#pic {
+    border-radius: 15px;
+}
+
+
+/* styling INTRODUCTION content */
+#intro_para {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* styling EXPERIENCE with alternative font-style */
+ol > li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exp_li:nth-child(even) {
+    font-weight: bold;
+}
+
+#table_section {
+    text-align: center;
+}
+
+
+/* styling SKILL table */
+.skill_table {
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;       
+    width: 400px;         
+    max-width: 100%; 
+}
+
+.skill_table th,
+.skill_table td {
+    height: 27px;         
+    padding: 6px 12px;
+}
+
+
+#table_head {
+    background-color: rgb(247, 242, 199);
+}
+
+
+tr:nth-child(even) {
+    background-color: beige;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+
+
+ul > li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* styling PROJECTS */
+
+.grid {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7px;
+}
+
+.grid-item {
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+    height: fit-content;
+    box-shadow: 1px 2px 3px gray;
+}
+
+@media (main-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .body {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+
+.grid div:nth-child(1){
+    background-color: burlywood;
+}
+
+.grid div:nth-child(2){
+    background-color: whitesmoke;
+}
+
+.grid div:nth-child(3){
+    background-color: whitesmoke;
+}
+
+.grid div:nth-child(4){
+    background-color: burlywood;
+}
+
+
+/* styling YOUTUBE VIDEO */
+
+#yt_video {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#yt_frame {
+    width: 450px;
+    height: 250px;
+}
+
+
+/* styling FORM */
+
+form {
+    width: fit-content;
+    max-width: 600px;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: rgb(247, 242, 199);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#btn_div {
+    text-align: center;
+}
+
+#sub_btn {
+    background-color: rgb(3, 76, 160);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 80px;
+    height: 27px;
+}
+
+#sub_btn:hover {
+    background-color: violet;
+    color: black;
+} 
+
+.entry {
+    width: 370px;
+    height: 27px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+input {
+    font-size: 14px;
+    padding: 2px 10px;
+}
